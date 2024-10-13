@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+    android:contentDescription="@string/back_button"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_margin="16dp" />
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"> <!-- Center content vertically -->
+
+
+
+    <!-- LinkedIn Text with Logo -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txt_linked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Linked"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/colorLinkedIn"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/linkedin"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <!-- First Name Field -->
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First name"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Last Name Field -->
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last name"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password (6 or more characters)"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Join Now Button -->
+    <Button
+        android:id="@+id/btn_join_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join now"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Divider -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Continue with Facebook Button -->
+    <Button
+        android:id="@+id/btn_continue_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Facebook"
+        android:background="@color/LightGray"
+        android:textColor="@android:color/white" />
+
+    <!-- Sign In Link -->
+    <TextView
+        android:id="@+id/txt_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already on LinkedIn? Sign in"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/colorPrimary"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

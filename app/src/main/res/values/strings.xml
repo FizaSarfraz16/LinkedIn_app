@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="join">Join Now</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="sign_in">Sign In</string>
+    <string name="back_button">Back</string>
+    <string name="edit_about">Edit About</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile_picture_desc">Profile Picture</string>
+
+</resources>
