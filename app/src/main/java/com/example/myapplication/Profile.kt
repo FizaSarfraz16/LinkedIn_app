@@ -38,16 +38,16 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
-        //imgEditAbout = findViewById(R.id.img_edit)
+        imgEditAbout = findViewById(R.id.img_edit)
         //imgEditProfile = findViewById(R.id.edit_profile)
         btnBack = findViewById(R.id.btn_back)
-        //editAboutLayout = findViewById(R.id.edit_about_layout)
+        editAboutLayout = findViewById(R.id.edit_about_layout)
         name = findViewById(R.id.txt_name)
         location = findViewById(R.id.txt_location)
         aboutTxt = findViewById(R.id.aboutTxt)
         headlineTxt = findViewById(R.id.headlineTxt)
-      //  editTextAbout = findViewById(R.id.about_edittext)
-        //saveAboutBtn = findViewById(R.id.save_btn)
+        editTextAbout = findViewById(R.id.about_edittext)
+        saveAboutBtn = findViewById(R.id.save_btn)
     }
 
     private fun setUserData() {

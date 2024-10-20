@@ -5,30 +5,29 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-
 class JoinNowActivity : AppCompatActivity() {
 
-    private lateinit var signInButton: Button
+    private lateinit var joinNowButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_join_now)
 
-//        signInButton = findViewById(R.id.btn_sign_in)
-//
-//        signInButton.setOnClickListener {
-//            showWelcomeMessage()
-//        }
+        joinNowButton = findViewById(R.id.btn_join_now)
+
+        joinNowButton.setOnClickListener {
+            showWelcomeMessage()
+        }
     }
 
+    // Method to display a toast message
     private fun showWelcomeMessage() {
         Toast.makeText(this, "Welcome!", Toast.LENGTH_LONG).show()
     }
 }
 
-// The JoinNow class can be defined separately as shown below
+
 class JoinNow {
-    // Define properties and methods here if needed
     var name: String = ""
     var email: String = ""
 

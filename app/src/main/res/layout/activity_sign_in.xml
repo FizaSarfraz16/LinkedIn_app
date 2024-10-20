@@ -36,13 +36,17 @@
             android:src="@drawable/linkedin" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:fontFamily="@font/poppins"
-            android:textColor="@color/colorLinkedIn"
-            android:layout_marginStart="180sp"
-            android:text="@string/join"/>
+            android:id="@+id/txt_join_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/colorLinkedIn"
+        android:layout_marginStart="180sp"
+        android:text="@string/join"
+        android:clickable="true"
+        android:focusable="true"/>
+
 
     </LinearLayout>
 
@@ -122,6 +126,7 @@
             android:fontFamily="@font/poppins"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_continue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Continue"
@@ -131,6 +136,7 @@
             android:layout_margin="20dp"
             android:textAllCaps="false"
             android:backgroundTint="@color/colorLinkedIn"/>
+
 
 
         <View

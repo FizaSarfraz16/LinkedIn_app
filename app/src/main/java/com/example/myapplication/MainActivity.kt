@@ -19,6 +19,6 @@ class MainActivity : AppCompatActivity() {
                  val intent = Intent(this, SignIn::class.java)
                  startActivity(intent)
                  finish()
-            }, 3000)  // 3-second delay for splash effect
+            }, 2000)  // 3-second delay for splash effect
     }
 }

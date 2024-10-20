@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SignIn" android:exported="true"/>
+        <activity android:name=".JoinNowActivity" android:exported="true"/>
+        <activity android:name=".ProfileActivity" android:exported="true"/>
+        <activity android:name=".HomeActivity" android:exported="true"/>
+        
     </application>
 
 </manifest>
