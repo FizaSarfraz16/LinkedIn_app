@@ -23,8 +23,14 @@
         </activity>
         <activity android:name=".SignIn" android:exported="true"/>
         <activity android:name=".JoinNowActivity" android:exported="true"/>
+        <activity android:name=".SharePostActivity" android:exported="true"/>
         <activity android:name=".ProfileActivity" android:exported="true"/>
         <activity android:name=".HomeActivity" android:exported="true"/>
+        <activity android:name=".HomeFragment" android:exported="true"/>
+        <activity android:name=".NotificationFragment" android:exported="true"/>
+        <activity android:name=".NetworkFragment" android:exported="true"/>
+        <activity android:name=".EditProfileIntroActivity" android:exported="true"/>
+
         
     </application>
 

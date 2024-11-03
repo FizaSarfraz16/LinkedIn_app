@@ -69,7 +69,7 @@ class SignIn : AppCompatActivity() {
                 Toast.makeText(this, "Sign In successful!", Toast.LENGTH_SHORT).show()
 
                 // Navigate to MainActivity or another appropriate activity
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

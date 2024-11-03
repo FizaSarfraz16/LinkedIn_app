@@ -1,27 +1,26 @@
+
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.View
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.RelativeLayout
-import androidx.cardview.widget.CardView
 
 class ProfileActivity : AppCompatActivity() {
 
     // Declare view variables
-    private lateinit var imgEditAbout: ImageView
-    private lateinit var imgEditProfile: ImageView
     private lateinit var btnBack: ImageView
-    private lateinit var editAboutLayout: RelativeLayout
+    private lateinit var imgEditProfile: ImageView
     private lateinit var name: TextView
     private lateinit var location: TextView
     private lateinit var aboutTxt: TextView
     private lateinit var headlineTxt: TextView
-    private lateinit var editTextAbout: EditText
-    private lateinit var saveAboutBtn: CardView
+    private lateinit var btnMessage: Button
+    private lateinit var btnConnect: Button
+    private lateinit var btnMore: Button
+    private lateinit var imgSetting: ImageView // Settings icon
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,20 +37,22 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
-        imgEditAbout = findViewById(R.id.img_edit)
-        //imgEditProfile = findViewById(R.id.edit_profile)
         btnBack = findViewById(R.id.btn_back)
-        editAboutLayout = findViewById(R.id.edit_about_layout)
+        imgEditProfile = findViewById(R.id.edit_profile)
         name = findViewById(R.id.txt_name)
         location = findViewById(R.id.txt_location)
         aboutTxt = findViewById(R.id.aboutTxt)
         headlineTxt = findViewById(R.id.headlineTxt)
-        editTextAbout = findViewById(R.id.about_edittext)
-        saveAboutBtn = findViewById(R.id.save_btn)
+        imgSetting = findViewById(R.id.setting)
+
+        // Button references
+        btnMessage = findViewById(R.id.btn_message)
+        btnConnect = findViewById(R.id.btn_connect)
+        btnMore = findViewById(R.id.btn_more)
     }
 
     private fun setUserData() {
-        name.text = "John Doe"
+        name.text = "Fiza Sarfraz"
         location.text = "San Francisco, CA"
         headlineTxt.text = "Software Engineer"
         aboutTxt.text = "This is a static about section. Add a summary about yourself."
@@ -61,34 +62,39 @@ class ProfileActivity : AppCompatActivity() {
         // Back Button
         btnBack.setOnClickListener { onBackPressed() }
 
-        // Edit About Section
-        imgEditAbout.setOnClickListener { editAboutLayout.visibility = View.VISIBLE }
-
-        // Save Button
-        saveAboutBtn.setOnClickListener {
-            // Update the about text when "Save" is clicked
-            aboutTxt.text = editTextAbout.text.toString()
-            editAboutLayout.visibility = View.GONE // Hide edit layout after saving
-        }
-
         // Edit Profile
         imgEditProfile.setOnClickListener {
-            // Open Edit Profile Activity (static implementation)
-            // Uncomment and implement as necessary
-            /*
+            // Open Edit Profile Activity
             val intent = Intent(this, EditProfileIntroActivity::class.java)
             intent.putExtra("user_name", name.text.toString())
             intent.putExtra("user_location", location.text.toString())
             startActivity(intent)
-            */
+        }
+
+        // Settings Button (if you want to implement settings)
+        imgSetting.setOnClickListener {
+            // Open Settings Activity if needed
+            // val intent = Intent(this, SettingsActivity::class.java)
+            // startActivity(intent)
+        }
+
+        // More Button Click Listener (if you want to implement more functionality)
+        btnMore.setOnClickListener {
+            // Add functionality for the "More" button if needed
+        }
+
+        // Message Button Click Listener (if you want to implement messaging)
+        btnMessage.setOnClickListener {
+            // Add functionality for the "Message" button if needed
+        }
+
+        // Connect Button Click Listener (if you want to implement connecting)
+        btnConnect.setOnClickListener {
+            // Add functionality for the "Connect" button if needed
         }
     }
 
     override fun onBackPressed() {
-        if (editAboutLayout.visibility == View.VISIBLE) {
-            editAboutLayout.visibility = View.GONE // Hide edit layout if it's visible
-        } else {
-            super.onBackPressed() // Otherwise, perform the normal back action
-        }
+        super.onBackPressed() // This will handle the back navigation
     }
 }

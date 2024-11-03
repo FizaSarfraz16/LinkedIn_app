@@ -8,8 +8,8 @@
     <string name="edit_about">Edit About</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="profile_picture_desc">Profile Picture</string>
-
-
+    <string name="connect">Connect</string>
+    <string name="add_friend_description">Add this user as a friend</string>
 
     <string name="profile_name">Profile Name</string>
     <string name="profile_dec">Description of the person</string>
@@ -71,5 +71,52 @@
     </string>
     <string name="social_count_4">75</string>
     <string name="comment_count_4">16 comments</string>
+    <string name="share_post">Share Post</string>
+    <string name="post">Post</string>
+    <string name="talk_about">What would you like to share?</string>
+    <string name="add_hashtag">Add Hashtag</string>
 
-</resources>
+        <dimen name="_10sdp">10dp</dimen>
+        <dimen name="_40sdp">40dp</dimen>
+        <dimen name="_140sdp">140dp</dimen>
+    <dimen name="_30sdp">30dp</dimen>
+    <dimen name="_14ssp">14sp</dimen>
+    <dimen name="_8ssp">8sp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+
+    <dimen name="_8sdp">8dp</dimen>
+
+    <dimen name="_12sdp">12dp</dimen>
+    <dimen name="_14sdp">14dp</dimen>
+    <dimen name="_16ssp">16sp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+
+    <dimen name="_2sdp">2dp</dimen>
+    <dimen name="_3sdp">3dp</dimen>
+    <dimen name="_70sdp">70dp</dimen>
+    <dimen name="_15sdp">15dp</dimen>
+
+
+    <dimen name="_13ssp">13sp</dimen>
+        <dimen name="_12ssp">12sp</dimen>
+        <dimen name="_14sp">14sp</dimen>
+
+        <dimen name="_18sdp">18dp</dimen>
+    <dimen name="_180sdp">180dp</dimen>
+    <dimen name="_150sdp">150dp</dimen>
+
+        <dimen name="_35sdp">35dp</dimen>
+    <dimen name="_16sdp">16dp</dimen>
+    <dimen name="_250sdp">250dp</dimen>
+        <dimen name="_50sdp">50dp</dimen>
+        <dimen name="_60sdp">60dp</dimen>
+    <dimen name="_22sdp">22dp</dimen>
+        <dimen name="_4sdp">4dp</dimen>
+    <dimen name="_10ssp">10sp</dimen>
+    <dimen name="_120sdp">120dp</dimen>
+        <dimen name="_6sdp">6dp</dimen>
+
+
+
+
+    </resources>
